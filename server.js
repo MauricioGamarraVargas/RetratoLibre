@@ -13,7 +13,5 @@ app.get('/contact', (req, res) =>{
     res.sendFile(__dirname + '/contact.html');
 })
 
-app.get('/profile/:name', (req, res) => {
-    res.render('profile', {person: req.params.name});
-})
+
 app.listen(3000);
