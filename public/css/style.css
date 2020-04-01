@@ -39,36 +39,74 @@
 
 .fa-camera-retro
 {
-    font-size: 1.2em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
 .fa-globe-americas{
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
-.fa-envelope{
-    font-size: 1.5em; 
+.fa-at{
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
 .fa-facebook{
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
 .fa-facebook-messenger{
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
 .fa-whatsapp-square{
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
 
 .fa-phone-square-alt{
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     color: #fcc533;
 }
+
+.fa-map-marker-alt{
+    font-size: 1.7em; 
+    color: #fcc533;
+}
+
+
+.decoration-contact{
+    border-bottom: 0.1em solid #fcc533;
+    width: 45%;
+    border-top: 0.1em solid #fcc533;
+    margin: auto;
+}
+
+.email-info{
+    font-size: 0.8em;
+}
+
+.info-comment{
+    font-size: 1em !important;
+}
+
+@media (max-width: 1360px){
+    .decoration-contact-up{
+        margin: auto;
+        border-bottom: 0.1em solid #fcc533;
+        width: 45%;
+    }
+}
+
+@media (max-width: 640px){
+    .decoration-contact-up{
+        margin: auto;
+        border-bottom: 0.1em solid #fcc533;
+        width: 70%;
+    }
+}
+
