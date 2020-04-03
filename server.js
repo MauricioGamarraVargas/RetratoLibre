@@ -20,5 +20,8 @@ app.get('/menu', (req, res) =>{
     res.render(__dirname + '/views/partials/menu.ejs');
 })
 
+app.get('/login', (req,res)=>{
+    res.render(__dirname + '/login');
+})
 
 app.listen(3000);
