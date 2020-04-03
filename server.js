@@ -1,21 +1,23 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
 
+
 app.use('/static', express.static('public'));
+app.set('view engine', 'ejs');
+
 //Route index or home page
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.render(__dirname + '/index');
     
 });
 //Route contact page
 app.get('/contact', (req, res) =>{
-    res.sendFile(__dirname + '/contact.html');
+    res.render(__dirname + '/contact');
 })
 
 app.get('/menu', (req, res) =>{
-    res.sendfile(path.join(__dirname + '/menu.html'));
+    res.render(__dirname + '/views/partials/menu.ejs');
 })
 
 
