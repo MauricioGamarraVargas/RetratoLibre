@@ -115,36 +115,34 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
 .title-login{
-     color: #fcc533;
-     font-size: 1.5em;
-     text-align: center;
- }
+    color: #fcc533;
+    font-size: 1.5em;
+    text-align: center;
+}
 
- .label-login {
-     font-size: 1em;
-     color: #fff;
-     font-weight: normal;
-     text-shadow: #1a1a1a;
+.label-login {
+    font-size: 1em;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: #1a1a1a;
      
- }
+}
 
- #form-login{
-     background: transparent;
-     border: 0px;
-     border-radius: 0px;
-     border-bottom: #fcc533 0.2em solid;
-     margin-bottom: 1em;
-     color: #fff;
-     font-size: 1em;
-     width: 80%;
-     
- }
+#form-login{
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: #fcc533 0.2em solid;
+    margin-bottom: 1em;
+    color: #fff;
+    font-size: 1em;
+    width: 80%;     
+}
 
- .small-login{
-     font-size: 0.8em;
-     color: #fff;
- }
+.small-login{
+    font-size: 0.8em;
+    color: #fff;
+}
 
 
