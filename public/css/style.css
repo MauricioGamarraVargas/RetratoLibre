@@ -111,7 +111,7 @@
 }
 
 .login-body{
-    background-image: url('/static/Resourses/Images/login/background6.jpg');
+    background-image: url('/static/Resourses/Images/login/background10.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -127,6 +127,7 @@
      color: #fff;
      font-weight: normal;
      text-shadow: #1a1a1a;
+     
  }
 
  #form-login{
@@ -137,10 +138,13 @@
      margin-bottom: 1em;
      color: #fff;
      font-size: 1em;
-     width: 90%;
+     width: 80%;
+     
  }
 
  .small-login{
      font-size: 0.8em;
      color: #fff;
  }
+
+
