@@ -1,27 +1,20 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const routing = require('./routes/route');
 
-
+app.use('', routing);
 app.use('/static', express.static('public'));
 app.set('view engine', 'ejs');
 
 //Route index or home page
 app.get('/', function(req, res){
-    res.render(__dirname + '/index');
-    
+    res.render(__dirname + '/index');    
 });
-//Route contact page
-app.get('/contact', (req, res) =>{
-    res.render(__dirname + '/contact');
-})
 
-app.get('/menu', (req, res) =>{
-    res.render(__dirname + '/views/partials/menu.ejs');
-})
-
-app.get('/login', (req,res)=>{
-    res.render(__dirname + '/login');
-})
-
-app.listen(3000);
+// app.get('/menu', (req, res) =>{
+//     res.render(__dirname + '/views/partials/menu.ejs');
+// })
+const server = app.listen(3000);
+if(server){
+    console.log('server runing...');
+}
