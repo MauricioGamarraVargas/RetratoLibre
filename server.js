@@ -1,20 +1,25 @@
 const express = require('express');
 const app = express();
-const routing = require('./routes/route');
 
-app.use('', routing);
-app.use('/static', express.static('public'));
+const index = require('./controllers/index.Controller');
+const contact = require('./controllers/contacts.Controller');
+const login = require('./controllers/login.Controller');
+//const routing = require('./controllers/route');
 app.set('view engine', 'ejs');
 
-//Route index or home page
-app.get('/', function(req, res){
-    res.render(__dirname + '/index');    
-});
+app.use('/static', express.static('public'));
 
-// app.get('/menu', (req, res) =>{
-//     res.render(__dirname + '/views/partials/menu.ejs');
-// })
-const server = app.listen(3000);
-if(server){
-    console.log('server runing...');
-}
+app.use('/', index);
+app.use('', contact);
+app.use('',login);
+
+//Route index or home page
+const port = 3000;
+const server = app.listen(port, function() {
+    if(!server){
+        console.log('SERVER ERROR');
+    }
+    else{
+        console.log('Runing server to port: '+ port);
+    }
+});

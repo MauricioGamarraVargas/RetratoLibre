@@ -1,9 +1,15 @@
+@font-face
+{
+    font-family: 'mifuente';
+    src: url(/static/Resourses/fuente/Ruthligos.ttf);
+}
+
 .background{
     background-color: #1a1a1a;
 }
 
 #imgLogo{
-    width:100px;
+    width: 5em;
 }
 
 .title-contact{
@@ -145,4 +151,49 @@
     color: #fff;
 }
 
+.background-logo{
+    background-color: #343a40; 
+}
+
+@media (max-width: 1360px){
+
+    #marcoTorrico{
+        font-family: mifuente !important;
+        color:#fcc533;
+        text-align: center;
+        padding-top: 2em;
+        font-size: 3em;
+    }
+    #fotografo{
+        color:#fcc533;
+        text-align: center;
+        font-size: 1.6em;;
+    }
+}
+
+@media (max-width: 640px){
+    #marcoTorrico{
+        font-family: mifuente !important;
+        color:#fcc533;
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 2em;
+    }
+    #fotografo{
+        color:#fcc533;
+        text-align: center;
+        font-size: 1em;;
+        padding-bottom: 2em;;
+    }
+}
+
+.col-fotos{
+    padding: 0.5% !important;
+}
+
+.img-home{
+    padding-top: 6% !important;
+    padding-right: 2%;
+    padding-left: 2%;;
+}
 
