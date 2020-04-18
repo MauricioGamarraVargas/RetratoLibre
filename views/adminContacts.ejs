@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Compress file css Bootstrap-->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Compress file JQuery -->
+    <script src="/static/js/jquery-3.4.1.slim.min.js"></script>
+    <!-- Compress file JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/CarouselTimer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Nombre completo</label>
+                        <input type="text" class="form-control" id="idName" value="<%= contactUpdate.name %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Correo empresarial</label>
+                        <input type="email" class="form-control" id="idEmail" value="<%= contactUpdate.email %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Número de empresarial de whatsapp</label>
+                        <input type="text" class="form-control" id="idWhatsapp" value="<%= contactUpdate.whatsapp %>">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Telefono</label>
+                        <input type="number" class="form-control" id="idPhone" value="<%= contactUpdate.phone %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Calle o Avenida Principal</label>
+                        <input type="text" class="form-control" id="idStreet" value="<%= contactUpdate.street %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Calle o Avenida de intersección</label>
+                        <input type="text" class="form-control" id="idStreet2" value="<%= contactUpdate.intersection %>">
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
