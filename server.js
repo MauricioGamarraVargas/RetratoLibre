@@ -8,7 +8,9 @@ const contact = require('./controllers/contacts.Controller');
 
 //Admin
 const login = require('./controllers/login.Controller');
+const admin = require('./controllers/admin.Controller');
 const contactAdmin = require('./controllers/adminContact.Controller');
+const ejemplo = require('./controllers/ejemploController');
 
 app.set('view engine', 'ejs');
 
@@ -19,7 +21,10 @@ app.use('', contact);
 
 //app.use to Admin
 app.use('',login);
+app.use('', admin);
 app.use('/admin', contactAdmin);
+app.use('',ejemplo);
+
 
 //Route index or home page
 const port = 3000;
