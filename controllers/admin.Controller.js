@@ -11,6 +11,7 @@ router.get('/admin', (req, res)=>{
         else{
             const contact= path.join(__dirname, '../views/admin.ejs');
             res.render(contact, {dataContact:contactM});
+            //comment...
         }
     })
 });
